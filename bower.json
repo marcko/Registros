@@ -1,0 +1,12 @@
+{
+  "name": "Registros",
+  "version": "0.0.1",
+  "authors": [
+    "marcko <marco.itnl@gmail.com>"
+  ],
+  "description": "registros de eciton",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}
