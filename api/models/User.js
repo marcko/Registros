@@ -8,7 +8,32 @@
 module.exports = {
 
   attributes: {
-
+    name:{
+      type:'string',
+      index:true,
+      required:true
+    },
+    lastname:{
+      type:'string',
+      index:true,
+      required:true
+    },
+    mail:{
+      type:'string',
+      index:true,
+      required:true,
+      unique:true
+    },
+    location:{
+      type:'string',
+      index:true,
+      required:true
+    },
+    telephone:{
+      type:'float',
+      index:true,
+      required:true
+    }
   }
 };
 

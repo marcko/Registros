@@ -35,10 +35,11 @@ module.exports.routes = {
   '/': {
     view: 'homepage'
   },
-  '/login':{
+  'post /registro':{
     controller: 'User',
     action: 'login'
-  }
+  },
+  '/usuario':{view:'usuario'}
 
   /***************************************************************************
   *                                                                          *
