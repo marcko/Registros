@@ -6,19 +6,17 @@
  */
 
 module.exports = {
-	login:function(req, res){
+	add:function(req, res){
     User.create(req.body,function(err, data){
       if(err) return console.log(err);
       console.log(data);
-      return res.redirect('/');
+      return res.location('/crearusuario');
     });
   },
   show:function(req, res){
-    User.find().exec(function(err, data){
+    User.find().exec(function(err,data){
       if(err) console.log(err);
-      return res.render('/usuario',{
-        data:data
-      });
+      return res.view('mostrarusuario',{data:data});
     });
   }
 };
